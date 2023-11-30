@@ -1,1 +1,244 @@
 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Minvera</title>
+    <style>
+        /* Font Definitions */
+        @font-face {
+            font-family: 'Cocogoose';
+            src: url('font/Cocogoose Pro Italic-trial.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'Cocogoose-p';
+            src: url('font/Cocogoose Pro Light-trial.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #0080FF;
+        }
+
+        h2 {
+            position: relative;
+            font-size: 48px;
+            padding: auto;
+            font-family: 'Cocogoose';
+            color: #333;
+            text-align: center;
+            display: inline-block;
+            width: 181px;
+            height: 46px;
+            margin-top: 2px;
+            margin-bottom: 3px;
+        }
+
+        p {
+            position: relative;
+            font-size: 13px;
+            font-weight: 100;
+            font-family: Cocogoose-p;
+            color: #333;
+            text-align: center;
+            display: inline-block;
+            width: 229px;
+            height: 25px;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px;
+            background-color: #0080FF;
+            color: #fff;
+        }
+
+        #logo {
+            max-width: 100px;
+        }
+
+        .navbar {
+            display: flex;
+            gap: 15px;
+            margin-right: auto;
+            margin-left: 80px;
+            margin-bottom: -7px;
+            color: #fff;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 14px;
+            font-family: Cocogoose;
+        }
+
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 50px;
+        }
+
+        .login-box {
+            border-radius: 15px;
+            padding: 20px;
+            height: 511px;
+            width: 37%;
+            text-align: center;
+            background-color: #fff;
+            position: relative;
+            box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
+        }
+
+        input {
+            width: 100%;
+            font-family: Cocogoose;
+            font-size: 24px;
+            padding: 10px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+            text-align-last: center;
+            color: #C4C4C4;
+            border: none;
+            border-radius: 0;
+            outline: none;
+            text-align: center;
+        }
+
+        hr {
+            border: 2px solid #c4c4c4;
+            width: 80%;
+            border-radius: 3px;
+        }
+
+        .login-btn {
+            border-radius: 15px;
+            background-color: #0080ff;
+            color: #fff;
+            padding: 10px;
+            width: 60%;
+            height: 50px;
+            cursor: pointer;
+            border: none;
+            font-family: Cocogoose;
+            font-size: 18px;
+        }
+
+        .or-box {
+            display: flex;
+            align-items: center;
+            margin: 20px 0;
+        }
+
+        .or-line {
+            border-radius: 2px;
+            height: 2px;
+            background-color: #c4c4c4;
+            position: relative;
+            display: inline-block;
+            width: 200px;
+            align-items: center;
+            margin: 0 100px;
+        }
+
+        .google-btn {
+            border-radius: 15px;
+            background-color: #fff;
+            color: #0080ff;
+            padding: 10px;
+            width: 60%;
+            height: 50px;
+            cursor: pointer;
+            border: 2px solid #0080ff;
+            box-sizing: border-box;
+            font-family: Cocogoose;
+            font-size: 18px;
+        }
+
+        .register-text {
+            margin-top: 20px;
+        }
+
+        .daftar {
+            margin: 50px;
+        }
+
+        .daftar a {
+            font-family: Cocogoose-p;
+            font-size: 13px;
+        }
+
+        /* Responsiveness */
+        @media only screen and (max-width: 1024px) {
+            .login-box {
+                width: 60%;
+            }
+        }
+
+        @media only screen and (max-width: 768px) {
+            .login-box {
+                width: 80%;
+            }
+
+            .navbar {
+                margin-left: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <img src="img/Logo 1.png" alt="Logo" id="logo">
+        <nav class="navbar">
+            <a href="landing-page.html">Home</a>
+            <a href="login.html">Login</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="login-box">
+            <div>
+                <h2>Masuk</h2>
+            </div>
+            <div>
+                <p>Masuk terlebih dahulu</p>
+            </div>
+
+            <input type="text" placeholder="Username">
+            <hr>
+            <input type="password" placeholder="Password">
+            <button class="login-btn">Masuk</button>
+            <div class="or-box">
+                <div class="or-line"></div>
+                <span>or</span>
+                <div class="or-line"></div>
+            </div>
+            <button class="google-btn">Google</button>
+            <div class="daftar">
+                <p>Belum punya akun? <a href="Daftar.html">Daftar</a></p>
+            </div>
+
+        </div>
+    </main>
+
+</body>
+
+</html>
